@@ -1,12 +1,12 @@
 
 function meuNome(nome){
-    console.log(`Meu nome é ${nome}`)
+    return (`Meu nome é ${nome}`)
 }
 meuNome('Silas')
 
 function maiorIdade(idade){
     if(idade >= 18){
-        console.log('Parabéns voçê é maior de idade')
+        console.log(meuNome('Silas') + ' é maior' )
     }else{
         console.log('Voçê é menor de idade')
     }
