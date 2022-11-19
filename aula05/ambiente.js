@@ -1,23 +1,18 @@
-class Carros {
+class Carros{
     marca;
-    cor;
-    gastoPorKM;
-    
-    constructor(marca, cor, gastoPorKM){
+    cor; 
+    kmGasto;
+
+    constructor(marca, cor, kmGasto){
         this.marca = marca
         this.cor = cor
-        this.gastoPorKM = valorGasto
+        this.kmGasto = kmGasto
     }
 
-}
-function quantoGastei(){
-    var precoC = 5.67
-    var consumoL = 10
-    var distancia = 1357
-
-    var kmPorLitro = distancia / consumoL
-    var valorGasto = kmPorLitro * precoC   
-    return (valorGasto) 
+    calcularDistancia(distancia, precoC){
+        return distancia * this.kmGasto * precoC
+    }
 }
 
-console.log(quantoGastei)
+var corsa = new Carros('chevrolet', 'verde', 1/10)
+console.log(corsa.calcularDistancia(70, 5.00))
