@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    padding: 1rem;
+}
+
+ol.pokemons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.pokemons li {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14A06F;
+    color: white;
+    border-radius: 1rem;
+    height: 100px;
+}
