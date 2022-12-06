@@ -1,6 +1,8 @@
-var numero = 5
 
-if (numero * 3){
-console.log('Fizz')
-
+if(resultado % 3 == 0 && resultado % 5 == 0){
+    print('FizzBuzz')
+}else if(resultado % 3 == 0){
+    print('Fizz')
+}else if(resultado % 5 == 0){
+    print('Buzz')
 }
